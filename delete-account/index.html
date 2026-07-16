@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delete a Goalora account and its associated data.">
+    <title>Delete Account - Goalora</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+        .site-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 18px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+        .site-nav a { font-weight: 600; }
+        h1 { font-size: 28px; color: #1a1a2e; margin-bottom: 8px; }
+        h2 {
+            font-size: 20px;
+            color: #1a1a2e;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e8e8e8;
+            padding-bottom: 6px;
+        }
+        p { margin-bottom: 12px; }
+        ol, ul { margin: 8px 0 16px 24px; }
+        li { margin-bottom: 8px; }
+        .effective-date { color: #666; font-size: 14px; margin-bottom: 24px; }
+        .highlight {
+            background-color: #f0f4ff;
+            border-left: 4px solid #4a6cf7;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .warning { background-color: #fff4f4; border-left-color: #b42318; }
+        .button-link {
+            display: inline-block;
+            background: #365bd6;
+            color: #fff;
+            padding: 11px 18px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            margin: 4px 0 12px;
+        }
+        .button-link:hover, .button-link:focus-visible {
+            background: #203f9f;
+            color: #fff;
+        }
+        a { color: #365bd6; text-decoration: underline; text-underline-offset: 2px; }
+        a:hover, a:focus-visible { color: #203f9f; }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e8e8e8;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 24px 20px; }
+            h1 { font-size: 22px; }
+            h2 { font-size: 18px; }
+            .button-link { display: block; width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <nav class="site-nav" aria-label="Policy navigation">
+            <a href="../index.html">Privacy Policy</a>
+            <a href="index.html" aria-current="page">Delete Account</a>
+            <a href="mailto:goalora2026@gmail.com">Contact Goalora</a>
+        </nav>
+
+        <article>
+            <header>
+                <h1>Delete Your Goalora Account</h1>
+                <p class="effective-date">Last updated: July 16, 2026</p>
+            </header>
+
+            <p>
+                This page explains how to request deletion of a Goalora English-learning
+                account for the Android app with package name
+                <strong>com.goalora.englishlearning</strong>. It is available without signing in or
+                reinstalling the App.
+            </p>
+
+            <div class="highlight warning">
+                <strong>Deletion is permanent.</strong> It removes the Goalora profile, learning
+                preferences, reminder preferences, and stored learning progress associated with the
+                account. This action cannot be undone.
+            </div>
+
+            <h2>Delete Your Account in the App</h2>
+            <ol>
+                <li>Sign in to Goalora.</li>
+                <li>Open <strong>My Profile</strong>.</li>
+                <li>Scroll to the <strong>Account</strong> section.</li>
+                <li>Select <strong>Delete account</strong>.</li>
+                <li>Read the permanent-deletion notice and select <strong>Delete account</strong> to confirm.</li>
+                <li>
+                    Reauthenticate: enter the current password for an email/password account, or
+                    complete the fresh Google Sign-In flow for a Google account.
+                </li>
+                <li>Wait for Goalora to confirm that deletion completed.</li>
+            </ol>
+            <p>
+                Do not close the App or assume deletion succeeded until the App confirms completion.
+                The App first anonymizes the signed-in user's Firestore profile and then deletes the
+                Firebase Authentication user. This process does not use Cloud Functions.
+            </p>
+
+            <h2>Request Deletion Without the App</h2>
+            <p>
+                If you cannot access the App, email Goalora from the email address associated with the
+                account. This helps Goalora verify that the request comes from the account owner.
+            </p>
+            <a class="button-link" href="mailto:goalora2026@gmail.com?subject=Goalora%20account%20deletion%20request&amp;body=Please%20delete%20my%20Goalora%20account.%0A%0AAccount%20email%3A%20">Email an account-deletion request</a>
+            <p>
+                Send the request to
+                <a href="mailto:goalora2026@gmail.com">goalora2026@gmail.com</a> with the subject
+                <strong>Goalora account deletion request</strong>. Include only:
+            </p>
+            <ul>
+                <li>the email address used for the Goalora account; and</li>
+                <li>a short statement requesting deletion of the account and associated data.</li>
+            </ul>
+            <div class="highlight warning">
+                <strong>Never send your password, Google password, access token, ID token,
+                verification code, or other authentication credential by email.</strong> Goalora will
+                not ask for those credentials by email.
+            </div>
+
+            <h2>Data Deleted</h2>
+            <p>For a verified account, the deletion process removes:</p>
+            <ul>
+                <li>
+                    the Firebase Authentication account; its former UID remains only in the old
+                    Firestore soft-deletion record and is no longer an active account identifier;
+                </li>
+                <li>
+                    identifying, preference, reminder, and progress fields from the old Cloud Firestore
+                    <code>users/{uid}</code> profile document;
+                </li>
+                <li>name, email, proficiency, learning-language preference, and education choice;</li>
+                <li>topics of interest, practice goal, preferred reminder times, and progress question IDs; and</li>
+                <li>
+                    for in-app deletion, local reminder schedules and the App's in-memory profile and
+                    question state on the device used for deletion.
+                </li>
+            </ul>
+            <p>
+                The old Firestore document is retained as a soft-deletion record. It keeps the UID,
+                <code>isDeleted</code> marker, deletion timestamp, "Deleted User" name, creation timestamp
+                where present, and any unchanged role field. It does not retain the deleted email,
+                learning preferences, reminder choices, or progress identifiers. If Firebase
+                Authentication deletion fails, the App attempts to restore the original Firestore
+                profile and does not report success.
+            </p>
+            <p>
+                If the App closes or loses its network connection before it confirms completion, sign
+                in again and retry the request or contact Goalora. Do not assume deletion succeeded
+                unless the App displays the success confirmation.
+            </p>
+            <p>
+                Shared learning questions are not deleted because they are not owned by an individual
+                user. The current App does not store user uploads in Firebase Storage, does not store
+                FCM registration tokens, and does not maintain user AI conversations.
+            </p>
+
+            <h2>Processing Time and Retention</h2>
+            <ul>
+                <li>
+                    <strong>In-app deletion:</strong> the authenticated App processes the Firestore
+                    anonymization and Firebase Authentication deletion during the confirmed flow. The
+                    App reports success only after both steps complete.
+                </li>
+                <li>
+                    <strong>Email requests:</strong> identity must first be verified. Goalora has not
+                    established a fixed manual-request service period, so Goalora will provide the
+                    expected completion date after verification.
+                </li>
+                <li>
+                    <strong>Firebase backups:</strong> deletion from active Goalora data does not mean
+                    all provider backups disappear instantly. Firebase states that deleted Authentication
+                    information may take up to 180 days to be removed from live and backup systems;
+                    authentication IP logs are generally retained for a few weeks.
+                </li>
+                <li>
+                    <strong>Support emails:</strong> Goalora has not established a separate fixed
+                    retention period. Messages are retained only as needed to process the request,
+                    protect the account, and meet applicable legal obligations.
+                </li>
+            </ul>
+
+            <h2>Registering Again</h2>
+            <p>
+                After deletion completes, you may register again using the same email address or the
+                same Google account. Firebase creates a new UID and Goalora creates a fresh profile.
+                The new account is separate, and deleted preferences and progress are not restored.
+                Deleting Goalora does not delete or revoke your underlying Google account.
+            </p>
+
+            <h2>Questions</h2>
+            <p>
+                For questions about account deletion, contact
+                <a href="mailto:goalora2026@gmail.com">goalora2026@gmail.com</a>. For complete details
+                about Goalora's data practices, read the <a href="../index.html">Goalora Privacy Policy</a>.
+            </p>
+        </article>
+
+        <footer class="footer">
+            &copy; 2026 Goalora. All rights reserved.
+        </footer>
+    </main>
+</body>
+</html>

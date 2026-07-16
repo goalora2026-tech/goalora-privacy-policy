@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for the Goalora English-learning application.">
     <title>Privacy Policy - Goalora</title>
     <style>
         * {
@@ -10,26 +11,47 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.7;
             color: #333;
             background-color: #f9f9f9;
             padding: 20px;
         }
+
         .container {
             max-width: 860px;
             margin: 0 auto;
             background: #fff;
             padding: 40px 50px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
         }
+
+        .site-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 18px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e8e8e8;
+        }
+
+        .site-nav a {
+            font-weight: 600;
+        }
+
         h1 {
             font-size: 28px;
             color: #1a1a2e;
             margin-bottom: 8px;
         }
+
         h2 {
             font-size: 20px;
             color: #1a1a2e;
@@ -38,27 +60,32 @@
             border-bottom: 2px solid #e8e8e8;
             padding-bottom: 6px;
         }
+
         h3 {
             font-size: 16px;
             color: #2c2c54;
             margin-top: 18px;
             margin-bottom: 8px;
         }
+
         p {
             margin-bottom: 12px;
-            text-align: justify;
         }
+
         ul {
             margin: 8px 0 16px 24px;
         }
+
         li {
-            margin-bottom: 6px;
+            margin-bottom: 7px;
         }
+
         .effective-date {
             color: #666;
             font-size: 14px;
             margin-bottom: 24px;
         }
+
         .highlight {
             background-color: #f0f4ff;
             border-left: 4px solid #4a6cf7;
@@ -66,28 +93,45 @@
             margin: 16px 0;
             border-radius: 0 4px 4px 0;
         }
+
+        .important {
+            background-color: #fff8e8;
+            border-left-color: #c47b00;
+        }
+
         a {
-            color: #4a6cf7;
-            text-decoration: none;
-        }
-        a:hover {
+            color: #365bd6;
             text-decoration: underline;
+            text-underline-offset: 2px;
         }
+
+        a:hover,
+        a:focus-visible {
+            color: #203f9f;
+        }
+
         .footer {
             margin-top: 40px;
             padding-top: 20px;
             border-top: 1px solid #e8e8e8;
             font-size: 13px;
-            color: #888;
+            color: #666;
             text-align: center;
         }
+
         @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
             .container {
                 padding: 24px 20px;
             }
+
             h1 {
                 font-size: 22px;
             }
+
             h2 {
                 font-size: 18px;
             }
@@ -95,199 +139,408 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="effective-date">Effective Date: April 24, 2026</p>
+    <main class="container">
+        <nav class="site-nav" aria-label="Policy navigation">
+            <a href="#privacy-policy" aria-current="page">Privacy Policy</a>
+            <a href="delete-account/index.html">Delete Account</a>
+            <a href="#contact">Contact Goalora</a>
+        </nav>
 
+        <article id="privacy-policy">
+            <header>
+                <h1>Goalora Privacy Policy</h1>
+                <p class="effective-date">Effective date: July 16, 2026</p>
+            </header>
 
-        <p>
-            Goalora (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the <strong>English Learning</strong> mobile application
-            (the &quot;App&quot;). This Privacy Policy explains how we collect, use, disclose, and safeguard your
-            information when you use our App. Please read this policy carefully. By using the App, you agree
-            to the collection and use of information in accordance with this policy.
-        </p>
+            <p>
+                Goalora ("Goalora," "we," "us," or "our") provides the
+                <strong>Goalora</strong> English-learning application for Android, package name
+                <strong>com.goalora.englishlearning</strong> (the "App"). This policy explains what
+                information the current App collects, where it is processed, why it is used, and the
+                choices available to users.
+            </p>
 
+            <div class="highlight">
+                Goalora is an English-learning app. It is not an anonymous-chat, random-chat, social
+                networking, or user-to-user messaging service.
+            </div>
 
-        <h2>1. Information We Collect</h2>
+            <h2>1. Information the App Collects</h2>
 
+            <h3>1.1 Account and authentication data</h3>
+            <ul>
+                <li>
+                    <strong>Email-and-password accounts:</strong> an email address and password are
+                    required when this sign-in method is selected. Firebase Authentication processes
+                    the password; the App does not write the password to Cloud Firestore.
+                </li>
+                <li>
+                    <strong>Google Sign-In:</strong> this is an optional alternative to email and
+                    password. If selected, Google provides identity information needed to sign in,
+                    including a Google account identifier, name, and email address. Goalora does not
+                    request Google contacts, Google Photos, or Google Drive data.
+                </li>
+                <li>
+                    <strong>User ID and timestamps:</strong> Firebase creates a unique account ID.
+                    Cloud Firestore records profile creation and update timestamps.
+                </li>
+            </ul>
 
-        <h3>1.1 Personal Information</h3>
-        <p>When you create an account or use our App, we may collect the following personal information:</p>
-        <ul>
-            <li><strong>Full Name</strong> &ndash; provided during account setup.</li>
-            <li><strong>Email Address</strong> &ndash; used for authentication and account identification.</li>
-        </ul>
+            <h3>1.2 Required profile data</h3>
+            <p>After account creation, the App requires:</p>
+            <ul>
+                <li>full name;</li>
+                <li>English proficiency level (beginner, intermediate, or advanced); and</li>
+                <li>preferred learning language (Hindi or Marathi).</li>
+            </ul>
 
+            <h3>1.3 Optional profile and reminder data</h3>
+            <p>Users may choose to provide:</p>
+            <ul>
+                <li>education level;</li>
+                <li>up to three topics of interest;</li>
+                <li>a practice goal; and</li>
+                <li>preferred practice-reminder times.</li>
+            </ul>
+            <p>
+                These fields are optional. They are used to personalize practice content and configure
+                reminders when selected.
+            </p>
 
-        <h3>1.2 Profile &amp; Preference Data</h3>
-        <p>To personalize your learning experience, we collect:</p>
-        <ul>
-            <li><strong>Proficiency Level</strong> &ndash; Beginner, Intermediate, or Advanced.</li>
-            <li><strong>Primary Language</strong> &ndash; your native language (e.g., Hindi, Marathi).</li>
-            <li><strong>Education Level</strong> &ndash; e.g., Primary, Secondary, Graduate, Post-Graduate.</li>
-            <li><strong>Topics of Interest</strong> &ndash; preferred learning topics you select.</li>
-            <li><strong>Practice Goal</strong> &ndash; your preferred practice frequency (Daily Once, Daily Twice, or Weekend).</li>
-            <li><strong>Preferred Practice Times</strong> &ndash; times you choose to receive practice reminders.</li>
-        </ul>
+            <h3>1.4 Learning progress</h3>
+            <p>
+                When a practice session is finished, Goalora records the identifiers of questions that
+                were attempted, answered correctly, or answered incorrectly. This allows the App to
+                show or select suitable practice material and avoid unnecessary repetition.
+            </p>
 
+            <h3>1.5 Practice answers</h3>
+            <p>
+                Words arranged as an answer during a practice session are checked on the device. The
+                current App does not upload or persist the full answer text. It uploads only the related
+                question identifiers and whether they were answered correctly or incorrectly.
+            </p>
 
-        <h3>1.3 Automatically Collected Information</h3>
-        <ul>
-            <li><strong>Device Timezone</strong> &ndash; used to schedule reminders at the correct local time.</li>
-            <li><strong>Account Timestamps</strong> &ndash; date and time of account creation and profile updates.</li>
-            <li><strong>Firebase User ID</strong> &ndash; a unique identifier generated by Firebase Authentication.</li>
-        </ul>
+            <h3>1.6 Technical information processed by service providers</h3>
+            <p>
+                Firebase and Google services may automatically process technical information needed to
+                provide and protect their services. Depending on the service, this can include IP
+                address, user-agent information, operating-system and device metadata, App and SDK
+                versions, the Firebase App ID, and a per-installation identifier. Firebase
+                Authentication uses IP address and user-agent information for authentication security
+                and abuse prevention.
+            </p>
 
+            <h2>2. Where Information Is Stored</h2>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the information we collect for the following purposes:</p>
-        <ul>
-            <li><strong>Account Management</strong> &ndash; to create and manage your user account.</li>
-            <li><strong>Personalization</strong> &ndash; to tailor practice content to your proficiency level, education, language, and interests.</li>
-            <li><strong>Reminders &amp; Notifications</strong> &ndash; to send local device notifications at your preferred practice times.</li>
-            <li><strong>App Functionality</strong> &ndash; to provide core features such as practice questions, review, and progress tracking.</li>
-            <li><strong>Improvement</strong> &ndash; to understand usage patterns and improve the App experience.</li>
-        </ul>
+            <h3>2.1 Information sent to Google/Firebase</h3>
+            <p>The following information leaves the device and is processed using Google services:</p>
+            <ul>
+                <li>
+                    account credentials and account identifiers through Firebase Authentication and,
+                    when chosen, Google Sign-In;
+                </li>
+                <li>
+                    name, email, proficiency, learning-language preference, optional profile choices,
+                    reminder preferences, and learning-progress question IDs in Cloud Firestore; and
+                </li>
+                <li>the technical service information described above.</li>
+            </ul>
 
+            <h3>2.2 Information kept on the device</h3>
+            <ul>
+                <li>
+                    The device timezone identifier is read to schedule reminders at the correct local
+                    time. Goalora's App code does not upload that identifier to Firestore.
+                </li>
+                <li>
+                    Reminder notifications and their schedules are created locally through the device
+                    notification system. Preferred reminder times are also saved to Firestore as part
+                    of the user's profile.
+                </li>
+                <li>
+                    Firebase Authentication keeps local sign-in state to support the user's session.
+                    Goalora disables Firestore's persistent disk cache; Firestore data may be held in
+                    memory while the App is running but is not kept in Firestore's offline disk cache.
+                </li>
+                <li>Practice answers are held in memory for the current practice session.</li>
+            </ul>
+            <p>
+                The App does not implement SharedPreferences, Android DataStore, Hive, SQLite, or a
+                separate app-managed local database.
+            </p>
 
-        <h2>3. Authentication &amp; Third-Party Services</h2>
-        <p>Our App uses the following third-party services:</p>
+            <h2>3. How Information Is Used</h2>
+            <ul>
+                <li><strong>Account management:</strong> create accounts, sign users in, maintain sessions, and reset passwords.</li>
+                <li><strong>App functionality:</strong> load English-learning questions and record practice results.</li>
+                <li><strong>Personalization:</strong> select material using language, proficiency, education level, interests, and past results.</li>
+                <li><strong>Local reminders:</strong> schedule optional practice notifications at times chosen by the user.</li>
+                <li><strong>Security and service reliability:</strong> authenticate requests, prevent abuse, and operate Firebase services.</li>
+                <li><strong>Support and rights requests:</strong> respond to messages sent to Goalora's contact email.</li>
+            </ul>
 
+            <h2>4. Service Providers and SDKs</h2>
 
-        <h3>3.1 Firebase (by Google)</h3>
-        <ul>
-            <li><strong>Firebase Authentication</strong> &ndash; handles user sign-up, login, and session management via Email/Password and Google Sign-In.</li>
-            <li><strong>Cloud Firestore</strong> &ndash; stores your profile data and practice content securely in the cloud.</li>
-            <li><strong>Firebase Cloud Messaging</strong> &ndash; may be used for delivering push notifications.</li>
-        </ul>
-        <p>
-            Firebase services are governed by
-            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google&rsquo;s Privacy Policy</a> and
-            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase Privacy and Security documentation</a>.
-        </p>
+            <h3>4.1 Firebase Authentication and Cloud Firestore</h3>
+            <p>
+                Goalora uses Firebase Authentication for email/password and Google authentication and
+                Cloud Firestore to store profile and progress data and provide practice questions.
+                Google processes this information as Goalora's service provider. Firebase
+                Authentication may process data in the United States, while Cloud Firestore may process
+                data in the configured Google Cloud location and on Google's infrastructure.
+            </p>
 
+            <h3>4.2 Google Sign-In and Google Play services</h3>
+            <p>
+                Google Sign-In is used only when a user chooses that option. Google Play services and
+                Android credential components support the sign-in process. The App does not use phone
+                calls, SMS messages, contacts, or call logs to verify accounts.
+            </p>
 
-        <h3>3.2 Google Sign-In</h3>
-        <p>
-            If you choose to sign in with Google, we receive your name and email address from your Google account.
-            We do not access your Google contacts, photos, or any other Google account data.
-        </p>
+            <h3>4.3 On-device utility SDKs</h3>
+            <p>
+                Goalora uses Flutter packages for local notifications, timezone lookup, Android
+                permission handling, vibration feedback, and temporary on-screen messages. The App
+                uses these features on the device and does not integrate them with a separate
+                advertising or analytics service.
+            </p>
 
+            <p>
+                See
+                <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a>,
+                <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy and Security in Firebase</a>,
+                and
+                <a href="https://firebase.google.com/terms" target="_blank" rel="noopener noreferrer">Firebase Terms</a>
+                for more information about Google's processing.
+            </p>
 
-        <h2>4. Notifications &amp; Permissions</h2>
-        <p>The App may request the following device permissions:</p>
-        <ul>
-            <li><strong>Notification Permission</strong> (Android 13+) &ndash; to send local practice reminders at your chosen times.</li>
-            <li><strong>Internet Access</strong> &ndash; to sync your data and load practice content.</li>
-        </ul>
-        <div class="highlight">
-            <strong>Note:</strong> All reminders are scheduled locally on your device. You can disable notifications
-            at any time through your device settings.
-        </div>
+            <h2>5. Services Goalora Does Not Currently Use</h2>
+            <p>The current App code does not include or use:</p>
+            <ul>
+                <li>Firebase Cloud Messaging (FCM) or server-sent push messaging;</li>
+                <li>Firebase Analytics or another analytics SDK;</li>
+                <li>Firebase Crashlytics or another crash-reporting SDK;</li>
+                <li>advertising, advertising identifiers, or attribution SDKs;</li>
+                <li>a third-party artificial-intelligence service or generative-AI API;</li>
+                <li>anonymous chat, random chat, or user-to-user messaging; or</li>
+                <li>sale of personal information.</li>
+            </ul>
+            <p>
+                Text in development documentation about possible future AI or push-notification
+                features does not describe functionality in the current App. This policy will be
+                updated before any materially different data practice is introduced.
+            </p>
 
+            <h2>6. Device Permissions</h2>
+            <p>The Android App declares permissions for:</p>
+            <ul>
+                <li><strong>Internet and network state:</strong> connect to Firebase and Google services;</li>
+                <li><strong>Notifications:</strong> show optional local practice reminders on supported Android versions;</li>
+                <li><strong>Vibration:</strong> provide feedback and support notification behavior;</li>
+                <li><strong>Boot completion:</strong> allow the notification component to restore scheduled reminders after restart or app update; and</li>
+                <li><strong>Inexact alarm scheduling:</strong> support scheduled local reminders without requesting Android's restricted exact-alarm permission.</li>
+            </ul>
+            <p>
+                Users can deny or disable notification permission in Android settings. Core learning
+                and account features remain available without enabling reminder notifications.
+            </p>
+            <p>
+                Goalora does not request SMS, <code>READ_CALL_LOG</code>, location, contacts, camera, or
+                microphone permission. Google credential libraries may contribute biometric-related
+                permission declarations to the merged Android manifest, but Goalora's App code does
+                not request, receive, or store biometric templates.
+            </p>
 
-        <h2>5. Data Storage &amp; Security</h2>
-        <p>
-            Your data is stored on Google&rsquo;s Firebase servers (Cloud Firestore) and is protected by
-            industry-standard security measures including encryption in transit and at rest.
-            We implement appropriate technical and organizational safeguards to protect your personal information
-            from unauthorized access, alteration, disclosure, or destruction.
-        </p>
-        <p>
-            Some data, such as notification schedules and timezone information, is stored locally on your device
-            and is not transmitted to our servers.
-        </p>
+            <h2>7. Sharing and Disclosure</h2>
+            <p>
+                Goalora does not sell or rent personal information. Information is disclosed in these
+                limited circumstances:
+            </p>
+            <ul>
+                <li>
+                    <strong>Service providers:</strong> Google/Firebase processes information to provide
+                    authentication, database, and sign-in services. This processing is not described as
+                    a sale of data.
+                </li>
+                <li>
+                    <strong>Legal and safety reasons:</strong> Goalora may disclose information when
+                    required by applicable law or valid legal process, or when reasonably necessary to
+                    protect users, Goalora, or the public.
+                </li>
+            </ul>
 
+            <h2>8. Data Retention</h2>
+            <ul>
+                <li>
+                    Firebase Authentication account data and identifiable Firestore profile/progress
+                    fields are retained while the account remains active. Account deletion removes the
+                    Authentication user and anonymizes the old Firestore document as described below;
+                    the App does not otherwise apply an automatic expiry period.
+                </li>
+                <li>
+                    Firebase states that authentication IP logs are generally retained for a few weeks.
+                    After the developer initiates deletion of a Firebase Authentication user, other Auth
+                    information is removed from live and backup systems within 180 days.
+                </li>
+                <li>
+                    Firebase states that, after a Firebase installation ID is deleted through the
+                    applicable API, information tied to that ID is removed from live and backup systems
+                    within 180 days. The current App does not automatically make that deletion request.
+                </li>
+                <li>
+                    Local reminders remain until they are cancelled, the user signs out, or the App is
+                    removed. Goalora cancels reminders and clears its in-memory user state after a
+                    confirmed deletion, and Firebase Authentication sign-out clears the local session.
+                </li>
+                <li>
+                    Goalora has not established a separate fixed retention period for support or
+                    deletion-request emails. Such messages are retained only as needed to handle the
+                    request, protect the account, and meet applicable legal obligations.
+                </li>
+            </ul>
 
-        <h2>6. Data Sharing</h2>
-        <p>We do <strong>not</strong> sell, trade, or rent your personal information to third parties. We may share your data only in the following circumstances:</p>
-        <ul>
-            <li><strong>Service Providers</strong> &ndash; with Firebase/Google solely to operate the App&rsquo;s core functionality.</li>
-            <li><strong>Legal Requirements</strong> &ndash; if required by law, regulation, or legal process.</li>
-            <li><strong>Safety</strong> &ndash; to protect the rights, safety, or property of our users or the public.</li>
-        </ul>
+            <h2 id="account-deletion">9. Access, Correction, and Account Deletion</h2>
+            <p>
+                Users can review and edit supported profile fields in the App. A signed-in user can
+                delete an account by opening <strong>My Profile</strong>, scrolling to
+                <strong>Account</strong>, selecting <strong>Delete account</strong>, reviewing the
+                permanent-deletion notice, and confirming the request. Email/password users must enter
+                their current password, and Google users must complete a fresh Google Sign-In. Goalora
+                does not receive or store the password entered for reauthentication.
+            </p>
+            <p>
+                After reauthentication, the App uses the currently authenticated Firebase UID to update
+                only that user's Firestore <code>users/{uid}</code> document. It marks the document
+                deleted, records a server deletion timestamp, changes profile-name fields to "Deleted
+                User," and removes email, profile choices, reminder preferences, and stored progress.
+                The UID remains as the document key and any role field is not changed. Firestore rules
+                prevent a user from updating another UID or changing the <code>uid</code> or
+                <code>role</code> field.
+            </p>
+            <p>
+                After the Firestore anonymization succeeds, the App deletes the current Firebase
+                Authentication user. If that Auth operation fails, the App attempts to restore the
+                original Firestore values, keeps the user signed in, and does not report success. On
+                success, it cancels local reminders, clears in-memory profile and question state, clears
+                local Firebase and Google sessions, and returns to the sign-in screen. This process does
+                not use a Cloud Function or Firebase Admin SDK.
+            </p>
+            <p>
+                If the user cannot access the App, the public
+                <a href="delete-account/index.html">Goalora account-deletion page</a> provides an alternative
+                request method. A user may email
+                <a href="mailto:goalora2026@gmail.com?subject=Goalora%20account%20deletion%20request">goalora2026@gmail.com</a>
+                from the address associated with the account. Include "Goalora account deletion
+                request" in the subject. Goalora may request reasonable verification before acting to
+                protect the account from unauthorized deletion.
+            </p>
+            <p>A verified deletion request covers, as applicable:</p>
+            <ul>
+                <li>the Firebase Authentication account;</li>
+                <li>identifying fields in the old Cloud Firestore user document;</li>
+                <li>learning preferences, reminder preferences, and stored progress question IDs;</li>
+                <li>
+                    the old Firestore document remains only as a soft-deletion record containing its UID,
+                    deletion marker and timestamp, "Deleted User" name, creation timestamp where present,
+                    and any unchanged role field;
+                </li>
+                <li>local reminder schedules and in-memory account state on the device used to delete the account.</li>
+            </ul>
+            <div class="highlight important">
+                <strong>Deletion timing:</strong> in-app deletion is processed during the confirmed
+                request, but provider backup removal is not immediate and may take
+                up to the Firebase periods described above. Manual email requests require identity
+                verification; because Goalora has not established a fixed manual-request service period,
+                Goalora will provide the expected completion date after verification. Limited records
+                may be retained when required by applicable law.
+            </div>
+            <p>
+                If the App is closed or the network connection is interrupted before completion, the
+                App does not display a success message. The user should sign in again and retry or
+                contact Goalora for assistance.
+            </p>
+            <p>
+                Signing out or uninstalling the App does not by itself delete the Firebase account or
+                Firestore data. Users may also withdraw optional notification permission in Android
+                settings and can remove optional profile choices in the App where supported.
+            </p>
+            <p>
+                After deletion, the same email address or Google account may be used to register again.
+                Firebase creates a new UID and Goalora creates a new profile. The new account is separate,
+                and deleted preferences and learning progress are not restored. Deleting Goalora does
+                not delete or revoke the user's underlying Google account.
+            </p>
 
+            <h2>10. Children's Privacy and Intended Audience</h2>
+            <p>
+                Goalora may be useful to school students, college students, graduates, postgraduates,
+                and adults. Describing someone as a "student" does not mean that person is a child.
+                The App is <strong>not directed to children under 13</strong>, and a person under 13 must
+                not create or use a Goalora account.
+            </p>
+            <p>
+                Goalora does not currently provide an age-screening flow, a parent account, parent
+                controls, or a mechanism for obtaining verifiable parental consent. Ordinary account
+                registration, Google Sign-In, or acceptance of this policy is not treated as parental
+                consent. If local law sets a higher minimum age for a person to consent to data
+                processing, the higher age applies.
+            </p>
+            <p>
+                If you believe a child below the applicable minimum age has provided personal
+                information, contact
+                <a href="mailto:goalora2026@gmail.com?subject=Goalora%20child%20privacy%20request">goalora2026@gmail.com</a>.
+                Goalora will investigate and take appropriate steps, including deletion where required.
+            </p>
 
-        <h2>7. Children&rsquo;s Privacy</h2>
-    
+            <h2>11. Security</h2>
+            <p>
+                Goalora uses Firebase Authentication, HTTPS connections provided by Firebase SDKs, and
+                Firestore access rules intended to limit each signed-in user to their own user document.
+                Firebase states that Authentication and Cloud Firestore data are encrypted in transit
+                and at rest. No system can guarantee absolute security, and Goalora does not make such
+                a guarantee. Users should protect their password and contact Goalora if they suspect
+                unauthorized account access.
+            </p>
 
-      <p>
-        Our App is designed for learners, including children under the age of
-        13. We are committed to protecting children's privacy. If a user is
-        under 13, we require verifiable parental consent before collecting any
-        personal information.
-      </p>
+            <h2>12. User Choices and Rights</h2>
+            <p>Depending on applicable law, users may have rights to:</p>
+            <ul>
+                <li>request access to personal information;</li>
+                <li>correct inaccurate information;</li>
+                <li>request deletion of the account and associated data;</li>
+                <li>object to or restrict certain processing;</li>
+                <li>withdraw a permission or consent where processing is based on it; and</li>
+                <li>request a portable copy where required by law.</li>
+            </ul>
+            <p>
+                Withdrawing notification permission stops reminder notifications but does not delete
+                the account. To exercise privacy rights, use the contact details below.
+            </p>
 
-      <p>
-        Information collected from children is limited to what is necessary to
-        provide the learning experience, such as a nickname, learning
-        preferences, and progress data. We do not require children to provide
-        more information than is reasonably necessary.
-      </p>
+            <h2>13. Changes to This Policy</h2>
+            <p>
+                Goalora may update this policy when the App, its service providers, or legal requirements
+                change. The effective date at the top of this page will be updated when material changes
+                are published. Where required, Goalora will provide an additional notice or request a
+                new choice before beginning materially different processing. Continued use alone is not
+                treated as parental consent or as consent where applicable law requires an affirmative
+                choice.
+            </p>
 
-      <p>Parents or guardians have the right to:</p>
-      <ul>
-        <li>Review their child’s personal data</li>
-        <li>Request correction or deletion of data</li>
-        <li>Withdraw consent at any time</li>
-      </ul>
+            <h2 id="contact">14. Contact Goalora</h2>
+            <p>For privacy questions, account requests, or concerns, contact:</p>
+            <address class="highlight">
+                <strong>Goalora</strong><br>
+                Email: <a href="mailto:goalora2026@gmail.com">goalora2026@gmail.com</a><br>
+                Privacy-policy URL:
+                <a href="https://goalora2026-tech.github.io/goalora-privacy-policy/">https://goalora2026-tech.github.io/goalora-privacy-policy/</a>
+            </address>
+        </article>
 
-      <p>
-        We do not use children's data for advertising, marketing, or profiling
-        purposes.
-      </p>
-
-      <p>
-        If you believe that we have collected personal information from a child
-        without parental consent, please contact us immediately at
-        <a href="mailto:goalora2026@gmail.com">goalora2026@gmail.com</a>, and we
-        will promptly delete such information.
-      </p>
-
-
-        <h2>8. Data Retention</h2>
-        <p>
-            We retain your personal information for as long as your account is active or as needed to provide
-            you with our services. If you wish to delete your account and associated data, please contact us
-            using the details provided below, and we will process your request within a reasonable timeframe.
-        </p>
-
-
-        <h2>9. Your Rights</h2>
-        <p>Depending on your jurisdiction, you may have the following rights regarding your personal data:</p>
-        <ul>
-            <li><strong>Access</strong> &ndash; request a copy of your personal data.</li>
-            <li><strong>Correction</strong> &ndash; request correction of inaccurate data.</li>
-            <li><strong>Deletion</strong> &ndash; request deletion of your personal data.</li>
-            <li><strong>Withdrawal of Consent</strong> &ndash; withdraw consent for data processing at any time.</li>
-            <li><strong>Data Portability</strong> &ndash; request your data in a portable format.</li>
-        </ul>
-        <p>To exercise any of these rights, please contact us at the email address listed below.</p>
-
-
-        <h2>10. Changes to This Privacy Policy</h2>
-        <p>
-            We may update this Privacy Policy from time to time. Any changes will be posted on this page with an
-            updated &quot;Effective Date.&quot; We encourage you to review this Privacy Policy periodically. Your continued
-            use of the App after any changes constitutes your acceptance of the updated policy.
-        </p>
-
-
-        <h2>11. Contact Us</h2>
-        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:</p>
-        <div class="highlight">
-            <strong>Goalora</strong><br>
-            Email: <a href="mailto:goalora2026@gmail.com">goalora2026@gmail.com</a>
-        </div>
-
-
-        <div class="footer">
+        <footer class="footer">
             &copy; 2026 Goalora. All rights reserved.
-        </div>
-    </div>
+        </footer>
+    </main>
 </body>
 </html>
-
-
-
-
